@@ -13,13 +13,13 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  host: localhost
+  username: <%= ENV['MYSQL_HOST_USER'] %>
+  password: <%= ENV['MYSQL_HOST_PASS'] %>
+  host: <%= ENV['MYSQL_HOST'] %>
 
 development:
   <<: *default
-  database: petalmd_development
+  database: petalmd_db
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: petalmd_production
-  username: petalmd
+  username: petalmd_user
   password: <%= ENV['PETALMD_DATABASE_PASSWORD'] %>
