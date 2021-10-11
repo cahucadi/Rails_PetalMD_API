@@ -1,7 +1,7 @@
 # README
 
 <p style="text-align:justify">
-This project is a technical test request from the company **PetalMD**. After analyzing the tech stack used by PetalMD and the information given in the job description, I decided to create an Restful API using <b>Rails, MySQL, ElasticSearch, Redis and Docker</b>. For testing I write unit tests using <b>Rspec</b> and <b>Postman</b> for response analysis.
+This project is a technical test request from the company <b>PetalMD</b>. After analyzing the tech stack used by PetalMD and the information given in the job description, I decided to create an Restful API using <b>Rails, MySQL, ElasticSearch, Redis and Docker</b>. For testing I write unit tests using <b>Rspec</b> and <b>Postman</b> for response analysis.
 <br/><br/>
 Using the CSV file with and extensive list of Pokémons ( available <a href="https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6" target="_blank"> here </a> ), I create a <b>MySQL</b> database and expose an API with CRUD ( Create, Read, Update, Delete ) actions, and an extra Search action using <b>ElasticSearch</b>. 
 <br/><br/>
@@ -30,9 +30,13 @@ This project uses **Docker** containers for environment configuration and automa
 
 - Clone or download this repository 
 
+    ```bash
+    git clone https://github.com/cahucadi/Rails_PetalMD_API.git
+    ```
+
 * Install/Open Docker
 
-* Build and start all services required (see **docker-compose.yml** and **Dockerfile** for configuration)
+* Build and start all services required (see **docker-compose.yml** and **Dockerfile** for configuration) using
 
     ```bash
     docker-compose up -d --build
