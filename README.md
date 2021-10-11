@@ -5,7 +5,7 @@ This project is a technical test request from the company <b>PetalMD</b>. After 
 <br/><br/>
 Using the CSV file with and extensive list of Pokémons ( available <a href="https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6" target="_blank"> here </a> ), I create a <b>MySQL</b> database and expose an API with CRUD ( Create, Read, Update, Delete ) actions, and an extra Search action using <b>ElasticSearch</b>. 
 <br/><br/>
-For pagination I used <b>Pagy</b> ( A ruby gem with outstanding performance. Detailed benchmark report <a href="https://ddnexus.github.io/pagination-comparison/gems.html" target="_blank"> here </a> ) and <b>Redis</b> for pagination caching, which significantly improved response time. Finally, I decided to use <b>JSON:API</b> specification for building APIS in JSON ( https://jsonapi.org/ ), this shared conventions for how a client should request resources and how a server should respond to those requests (for example <b>data:</b> for primary content used in this project)   
+For pagination I used <b>Pagy</b> ( A ruby gem with outstanding performance. Detailed benchmark report <a href="https://ddnexus.github.io/pagination-comparison/gems.html" target="_blank"> here </a> ) and <b>Redis</b> for pagination caching, which significantly improved response time. Finally, I decided to use <b>JSON:API</b> specification for building APIS in JSON ( https://jsonapi.org/ ), a set of shared conventions for how a client should request resources and how a server should respond to those requests (for example <b>data:</b> for primary content used in this project)   
 
 </p>
 
