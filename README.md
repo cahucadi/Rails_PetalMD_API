@@ -28,31 +28,32 @@ This project uses **Docker** containers for environment configuration and automa
 #
 ## Configuration
 
-- Clone or download this repository 
+1. Clone or download this repository 
 
     ```bash
     git clone https://github.com/cahucadi/Rails_PetalMD_API.git
     ```
+    **Warning:** entrypoint.sh file can generate CREL/EL issues on W10. A simple way to resolve this is open this file with Notepad++ and Edit -> EOL Conversion -> Unix. 
 
-* Install/Open Docker
+2. Install/Open Docker
 
-* Build and start all services required (see **docker-compose.yml** and **Dockerfile** for configuration) using
+3. Build and start all services required (see **docker-compose.yml** and **Dockerfile** for configuration) using
 
     ```bash
     docker-compose up -d --build
     ```
-* Populate the MySQL database using the downloaded CSV data (**/lib/seeds/pokemon.csv**)
+4. Populate the MySQL database using the downloaded CSV data (**/lib/seeds/pokemon.csv**)
 
     ```bash
     docker-compose run app rake db:migrate:reset
 
     docker-compose run app rails db:seed
     ```
-* This imported records will populate the ElasticSearch instance automatically.
+    This imported records will populate the ElasticSearch instance automatically.
 
-* The project now is ready for use with Postman, no additional configuration required.
+6. The project now is ready for use with Postman, no additional configuration required.
 
-* For unit testing using rspec
+7. For unit testing using rspec
 
     ```bash
     docker-compose run app rspec
