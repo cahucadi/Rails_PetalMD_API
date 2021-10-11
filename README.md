@@ -125,6 +125,73 @@ This project uses **Docker** containers for environment configuration and automa
         </tbody>
     </table>
 
+
+* A sample JSON structure for POST / PUT params
+
+    ```js
+            pokemon: {
+                name: 'Ultra Instant Pikachu' , 
+                type_1: 'Electric' , 
+                type_2: 'Psychic' , 
+                total: '800' , 
+                hp: '120' , 
+                attack: '110' , 
+                defense: '110' , 
+                sp_atk: '180' , 
+                sp_def: '160' , 
+                speed: '150' , 
+                generation: '2' , 
+                legendary: 'true'
+            }
+            
+    ```
+
+* A sample JSON structure for response body
+
+    ```js
+    {
+        "data": [
+            {
+                "id": "1",
+                "type": "pokemon",
+                "attributes": {
+                    "name": "Bulbasaur",
+                    "type_1": "Grass",
+                    "type_2": "Poison",
+                    "total": 318,
+                    "hp": 45,
+                    "attack": 49,
+                    "defense": 49,
+                    "sp_atk": 65,
+                    "sp_def": 65,
+                    "speed": 45,
+                    "generation": 1,
+                    "legendary": true
+                }
+            },
+            {
+                "id": "2",
+                "type": "pokemon",
+                "attributes": {
+                    "name": "Ivysaur",
+                    "type_1": "Grass",
+                    "type_2": "Poison",
+                    "total": 405,
+                    "hp": 60,
+                    "attack": 62,
+                    "defense": 63,
+                    "sp_atk": 80,
+                    "sp_def": 80,
+                    "speed": 60,
+                    "generation": 1,
+                    "legendary": true
+                }
+            }
+        ]
+    }
+    ```
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
